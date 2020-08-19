@@ -23,7 +23,7 @@
       "filterByWmsGetCapabilities": false,
       "filterQuery": [
         {
-          "fq": "+(organization:ioos)+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
+          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
         }
       ],
       "includeCsv": true,
