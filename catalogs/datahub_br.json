@@ -1,0 +1,34 @@
+{
+  "corsDomains" : [
+      "data.amerigeoss.org"
+  ],
+  "homeCamera": {
+    "west": -73,
+    "south": 0.72,
+    "east": -59,
+    "north": 12
+  },
+  "services": [],
+  "catalog": [
+    {
+      "name": "Amerigeoss Brazil",
+      "type": "ckan",
+      "url": "https://data.amerigeoss.org",
+      "description": "Brazil Open Data",
+      "minimumMaxScaleDenominator": 1000000,
+      "filterByWmsGetCapabilities": false,
+      "filterQuery": [
+        {
+          "fq": "+(organization:br)+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
+        }
+      ],
+      "includeCsv": true,
+      "includeGeoJson": true,
+      "includeKml": true,
+      "includeWms": true,
+      "includeWfs": true,
+      "includeEsriMapServer": true,
+      "includeEsriFeatureServer": true
+    }
+  ]
+}

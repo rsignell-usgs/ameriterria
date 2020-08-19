@@ -1,0 +1,35 @@
+{
+  "corsDomains" : [
+      "data.amerigeoss.org",
+      "wfp.org"
+  ],
+  "homeCamera": {
+    "west": -121,
+    "south": 18,
+    "east": -66,
+    "north": 61
+  },
+  "services": [],
+  "catalog": [
+    {
+      "name": "Amerigeoss WFP",
+      "type": "ckan",
+      "url": "https://data.amerigeoss.org",
+      "description": "World Food Program",
+      "minimumMaxScaleDenominator": 100000,
+      "filterByWmsGetCapabilities": false,
+      "filterQuery": [
+        {
+          "fq": "+(organization:wfp)+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
+        }
+      ],
+      "includeCsv": true,
+      "includeGeoJson": true,
+      "includeKml": true,
+      "includeWms": true,
+      "includeWfs": true,
+      "includeEsriMapServer": true,
+      "includeEsriFeatureServer": true
+    }
+  ]
+}

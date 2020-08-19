@@ -1,0 +1,37 @@
+{
+  "corsDomains" : [
+      "amerigeoss.org",
+      "arcgis.com",
+      "esri.com"
+  ],
+  "homeCamera": {
+    "west": -171,
+    "south": 18,
+    "east": -66,
+    "north": 71
+  },
+  "services": [],
+  "catalog": [
+    {
+      "name": "Amerigeoss Esri",
+      "type": "ckan",
+      "url": "https://data.amerigeoss.org",
+      "description": "AmeriGEO Esri Resources",
+      "minimumMaxScaleDenominator": 1000000,
+      "filterByWmsGetCapabilities": false,
+      "groupBy": "",
+      "filterQuery": [
+        {
+          "fq": "+(organization:esri)+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
+        }
+      ],
+      "includeCsv": true,
+      "includeGeoJson": true,
+      "includeKml": true,
+      "includeWms": true,
+      "includeWfs": true,
+      "includeEsriMapServer": true,
+      "includeEsriFeatureServer": true
+    }
+  ]
+}
