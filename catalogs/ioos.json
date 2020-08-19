@@ -1,6 +1,6 @@
 {
   "corsDomains" : [
-      "data.amerigeoss.org"
+      "data.ioos.us"
   ],
   "homeCamera": {
     "west": -121,
