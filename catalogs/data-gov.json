@@ -1,0 +1,38 @@
+{
+  "corsDomains" : [
+      "catalog.data.gov"
+  ],
+  "homeCamera": {
+    "west": -121,
+    "south": 18,
+    "east": -66,
+    "north": 61
+  },
+  "services": [],
+  "catalog": [
+    {
+      "name": "Data.Gov",
+      "type": "ckan",
+      "url": "https://catalog.data.gov",
+      "description": "Data.Gov Catalog",
+      "blacklist": {
+        "Rainforests (EVC_2005)": true
+      },
+      "groupBy": "",
+      "minimumMaxScaleDenominator": 100,
+      "filterByWmsGetCapabilities": false,
+      "filterQuery": [
+        {
+          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
+        }
+      ],
+      "includeCsv": true,
+      "includeGeoJson": true,
+      "includeKml": true,
+      "includeWms": true,
+      "includeWfs": true,
+      "includeEsriMapServer": true,
+      "includeEsriFeatureServer": true
+    }
+  ]
+}
