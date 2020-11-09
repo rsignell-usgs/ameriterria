@@ -1,0 +1,34 @@
+{
+  "corsDomains" : [
+      "data.ioos.us"
+  ],
+  "homeCamera": {
+    "west": -121,
+    "south": 18,
+    "east": -66,
+    "north": 61
+  },
+  "services": [],
+  "catalog": [
+    {
+      "name": "IOOS",
+      "type": "ckan",
+      "url": "https://data.ioos.us",
+      "description": "Integrated Ocean Observing System (IOOS)",
+      "blacklist": {
+        "Rainforests (EVC_2005)": true
+      },
+      "groupBy": "",
+      "minimumMaxScaleDenominator": 100,
+      "filterByWmsGetCapabilities": false,
+      "filterQuery": [
+        {
+          "fq": "+(res_format:(wms OR WMS OR \"Esri REST\"))"
+        }
+      ],
+      "includeWms": true,
+      "includeEsriMapServer": true,
+      "includeEsriFeatureServer": true
+    }
+  ]
+}
